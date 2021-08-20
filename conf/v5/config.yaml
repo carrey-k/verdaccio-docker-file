@@ -3,7 +3,7 @@ plugins: /verdaccio/plugins
 
 web:
   enable: true
-  title: Npm registry with VerdaccioV5
+  title: Npm registry
   primary_color: red
 
 auth:
