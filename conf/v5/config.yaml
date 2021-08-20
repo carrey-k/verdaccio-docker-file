@@ -1,8 +1,9 @@
 storage: /verdaccio/storage
+plugins: /verdaccio/plugins
 
 web:
   enable: true
-  title: VerdaccioV5 Relative Path
+  title: Npm registry with VerdaccioV5
   primary_color: red
 
 auth:
