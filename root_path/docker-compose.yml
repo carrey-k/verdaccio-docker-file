@@ -1,0 +1,37 @@
+version: '2'
+
+services:
+  verdaccio:
+    image: verdaccio/verdaccio:latest
+    container_name: verdaccio_root_path
+    ports:
+      - '4873:4873'
+    networks:
+      - node-network
+    volumes:
+      - verdaccio:/verdaccio
+
+  nginx:
+    restart: always
+    build: conf/nginx
+    ports:
+      - '80:80'
+    networks:
+      - node-network
+    volumes:
+      - /www/public
+    volumes_from:
+      - verdaccio
+    links:
+      - verdaccio:verdaccio
+
+volumes:
+  verdaccio:
+    driver: local
+
+networks:
+  node-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.57.0/24
