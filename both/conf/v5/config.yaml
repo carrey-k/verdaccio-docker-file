@@ -20,7 +20,7 @@ security:
 
 ## IMPORTANT
 ## This will configure verdaccio to rely on a relative path
-url_prefix: /verdaccio
+url_prefix: /verdaccio/
 
 uplinks:
   npmjs:
