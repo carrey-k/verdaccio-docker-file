@@ -3,7 +3,7 @@ version: '3.1'
 services:
   nginx:
     build:
-      context: 'nginx_ssl'
+      context: ''
       dockerfile: nginx_ssl/Dockerfile
     ports:
       - '443:443'
