@@ -41,6 +41,19 @@ https://localhost/verdaccio/
 
 by [@verdaccio](https://github.com/verdaccio)
 
+### Note 
+
+Please use the following command to generate a new password for the config htpasswd under conf/v5 folder:
+
+`htpasswd -c htpasswd user_name`
+
+change the user_name as you want and enter your password  manually.
+
+The passwords in current expample:
+```
+admin:admin
+test:123456
+```
 
 
 #### References
