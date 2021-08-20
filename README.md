@@ -25,7 +25,7 @@ http://localhost/relative_path/
 **Nginx SSL Example**
 
 ```bash
-docker-compose -f docker-compose_ssl.yml up --build --force-recreate
+docker-compose -f docker-compose-ssl.yml up --build --force-recreate
 ```
 
 open the browser
