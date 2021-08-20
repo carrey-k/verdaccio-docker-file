@@ -9,15 +9,15 @@ services:
       - '443:443'
       - '80:80'
     environment:
-      - REMOTE_URL=http://verdaccio_relative_path_v5:4873/
+      - REMOTE_URL=http://verdaccio_v5:4873/
     networks:
       - node-network
     container_name: 'nginx_ssl'
     depends_on:
       - verdaccio
   verdaccio:
-    image: verdaccio/verdaccio:5.1
-    container_name: 'verdaccio_relative_path_v5'
+    image: verdaccio/verdaccio:latest
+    container_name: 'verdaccio_v5'
     networks:
       - node-network
     environment:

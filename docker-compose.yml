@@ -13,8 +13,8 @@ services:
     depends_on:
       - verdaccio
   verdaccio:
-    image: verdaccio/verdaccio:5.1
-    container_name: 'verdaccio_relative_path_v5'
+    image: verdaccio/verdaccio:latest
+    container_name: 'verdaccio_v5'
     networks:
       - node-network
     environment:
