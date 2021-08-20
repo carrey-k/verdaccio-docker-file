@@ -10,6 +10,12 @@ services:
     networks:
       - node-network
     container_name: 'nginx'
+    volumes:
+      - /www/public
+    volumes_from:
+      - verdaccio
+    links:
+      - verdaccio:verdaccio
     depends_on:
       - verdaccio
   verdaccio:
