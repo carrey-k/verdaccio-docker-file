@@ -22,6 +22,8 @@ services:
       - node-network
     environment:
       - VERDACCIO_PORT=4873
+      - http_proxy=http://7.42.80.220:3128
+      - https_proxy=http://7.42.80.220:3128
     ports:
       - '4873:4873'
     volumes:
@@ -33,4 +35,4 @@ networks:
     driver: bridge
     ipam:
       config:
-        - subnet: 192.168.57.0/24
+        - subnet: 172.16.57.0/24
