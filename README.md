@@ -55,6 +55,7 @@ admin:admin
 test:123456
 ```
 
+### For how to using it please refer to [Wiki](https://github.com/kangchengkun/verdaccio-docker-file/wiki/How-to-using-NPM-Registry)
 
 #### References
 1. https://github.com/verdaccio/verdaccio
