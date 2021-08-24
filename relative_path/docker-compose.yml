@@ -20,8 +20,8 @@ services:
     environment:
       - VERDACCIO_PORT=4873
       - DEBUG=verdaccio:*
-      - http_proxy=http://7.42.80.220:3128
-      - https_proxy=http://7.42.80.220:3128
+      - http_proxy=http://localhost:3128
+      - https_proxy=http://localhost:3128
     ports:
       - '4873:4873'
     volumes:
